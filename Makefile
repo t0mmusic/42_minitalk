@@ -6,12 +6,16 @@
 #    By: jbrown <jbrown@student.42.fr>              +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/04 11:33:14 by jbrown            #+#    #+#              #
-#    Updated: 2022/04/04 11:33:15 by jbrown           ###   ########.fr        #
+#    Updated: 2022/04/04 12:39:49 by jbrown           ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 SERVER = server
 CLIENT = client
+
+BONUS_SERVER = bonus_server
+BONUS_CLIENT = bonus_client
+
 CC = gcc
 CFLAGS = -Wall -Werror -Wextra -Iheaders
 
@@ -32,7 +36,7 @@ LIBFT_FCLEAN_MSG = echo "Removing libft"
 CLIENT_CLEAN_MSG = echo "Removing client"
 SERVER_CLEAN_MSG = echo "Removing server"
 
-all: 
+all:
 	@$(PRINTF_MSG)
 	@$(MAKE) bonus -C ./printf >/dev/null
 	@make $(SERVER) >/dev/null & $(SERVER_MSG)
@@ -44,6 +48,19 @@ $(SERVER):
 
 $(CLIENT):
 	@$(CC) $(CFLAGS) $(SRCS)client.c $(SRCS)utils.c $(PRINTF_A) -o $(CLIENT)
+
+bonus: 
+	@$(PRINTF_MSG)
+	@$(MAKE) bonus -C ./printf >/dev/null
+	@make $(SERVER) >/dev/null & $(SERVER_MSG)
+	@make $(CLIENT) >/dev/null & $(CLIENT_MSG)
+	@$(COMPLETE_MSG)
+
+$(BONUS_SERVER):
+	@$(CC) $(CFLAGS) $(SRCS)$(BONUS_SERVER).c $(SRCS)utils.c $(PRINTF_A) -o $(SERVER)
+
+$(BONUS_CLIENT):
+	@$(CC) $(CFLAGS) $(SRCS)$(BONUS_CLIENT).c $(SRCS)utils.c $(PRINTF_A) -o $(CLIENT)
 
 clean:
 	@$(MAKE) clean -C ./printf >/dev/null & $(PRINTF_CLEAN_MSG)
