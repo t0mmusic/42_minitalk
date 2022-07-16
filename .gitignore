@@ -1,6 +1,6 @@
-**/headers/
-**/objects/
-**/archives/
+headers/**
+objects/**
+archives/**
 client
 server
 printf
