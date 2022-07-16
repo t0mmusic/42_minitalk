@@ -1,7 +1,8 @@
-headers/**
+headers/libft.h
+headers/ft_printf.h
 objects/**
 archives/**
 client
 server
 printf
-!headers/minitalk.h
+.vs*
