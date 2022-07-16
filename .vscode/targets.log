@@ -1,0 +1,478 @@
+make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+# GNU Make 4.2.1
+# Built for x86_64-pc-linux-gnu
+# Copyright (C) 1988-2016 Free Software Foundation, Inc.
+# License GPLv3+: GNU GPL version 3 or later <http://gnu.org/licenses/gpl.html>
+# This is free software: you are free to change and redistribute it.
+# There is NO WARRANTY, to the extent permitted by law.
+
+# Make data base, printed on Sat Jul 16 18:07:24 2022
+
+# Variables
+
+# 'override' directive
+GNUMAKEFLAGS := 
+# automatic
+<D = $(patsubst %/,%,$(dir $<))
+# automatic
+?F = $(notdir $?)
+# environment
+DESKTOP_SESSION = ubuntu
+# default
+.SHELLFLAGS := -c
+# makefile (from 'Makefile', line 13)
+SERVER = server
+# environment
+XDG_SESSION_CLASS = user
+# environment
+SNAP_COMMON = /var/snap/code/common
+# environment
+XDG_SESSION_TYPE = x11
+# automatic
+?D = $(patsubst %/,%,$(dir $?))
+# automatic
+@D = $(patsubst %/,%,$(dir $@))
+# environment
+XAUTHORITY = /run/user/1000/gdm/Xauthority
+# environment
+GDMSESSION = ubuntu
+# environment
+XMODIFIERS = @im=ibus
+# makefile
+CURDIR := /home/jordan/Documents/42projects/minitalk
+# makefile
+SHELL = /bin/sh
+# makefile (from 'Makefile', line 22)
+RM = rm -f
+# environment
+SNAP_DATA = /var/snap/code/101
+# makefile (from 'Makefile', line 34)
+PRINTF_CLEAN_MSG = echo "Removing printf object files"
+# environment
+VTE_VERSION = 6003
+# environment
+VSCODE_NLS_CONFIG = {"locale":"en-gb","availableLanguages":{},"_languagePackSupport":true}
+# environment
+JOURNAL_STREAM = 8:176742
+# makefile (from 'Makefile', line 16)
+CFLAGS = -Wall -Werror -Wextra -Iheaders
+# environment
+XDG_CONFIG_DIRS = /etc/xdg/xdg-ubuntu:/etc/xdg
+# environment
+SNAP_INSTANCE_NAME = code
+# environment
+SNAP_ARCH = amd64
+# makefile (from 'Makefile', line 1)
+MAKEFILE_LIST :=  Makefile
+# automatic
+@F = $(notdir $@)
+# environment
+IM_CONFIG_PHASE = 1
+# environment
+USERNAME = jordan
+# environment
+XDG_DATA_DIRS = /usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop
+# environment
+DBUS_SESSION_BUS_ADDRESS = unix:path=/run/user/1000/bus
+# makefile (from 'Makefile', line 28)
+OBJS = $(SRCS:srcs/%.c=objects/%.o)
+# makefile (from 'Makefile', line 33)
+COMPLETE_MSG = echo "Ready! run ./server to get server PID, then ./client <PID> <MESSAGE>"
+# environment
+MANAGERPID = 1519
+# environment
+LESSOPEN = | /usr/bin/lesspipe %s
+# environment
+VSCODE_CWD = /home/jordan/Documents/42projects/minitalk
+# environment
+GSETTINGS_SCHEMA_DIR = /snap/code/101/usr/share/glib-2.0/schemas
+# default
+MAKE_HOST := x86_64-pc-linux-gnu
+# environment
+PATH = /home/jordan/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/jordan/.local/bin
+# makefile (from 'Makefile', line 39)
+SERVER_CLEAN_MSG = echo "Removing server"
+# environment
+GPG_AGENT_INFO = /run/user/1000/gnupg/S.gpg-agent:0:1
+# environment
+SESSION_MANAGER = local/jordan-ubuntu:@/tmp/.ICE-unix/13902,unix/jordan-ubuntu:/tmp/.ICE-unix/13902
+# environment
+XDG_RUNTIME_DIR = /run/user/1000
+# environment
+GDK_PIXBUF_MODULE_FILE = /home/jordan/snap/code/common/.cache/gdk-pixbuf-loaders.cache
+# environment
+SNAP = /snap/code/101
+# makefile (from 'Makefile', line 25)
+HEADER_DEST = headers
+# environment
+SNAP_VERSION = b06ae3b2
+# environment
+XDG_MENU_PREFIX = gnome-
+# environment
+DISABLE_WAYLAND = 1
+# environment
+ELECTRON_RUN_AS_NODE = 1
+# environment
+INVOCATION_ID = a8c6f2786e3d4811923a0ecf35b85272
+# environment
+GDK_PIXBUF_MODULEDIR = /snap/code/101/usr/lib/x86_64-linux-gnu/gdk-pixbuf-2.0/2.10.0/loaders
+# default
+.FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
+# makefile (from 'Makefile', line 36)
+LIBFT_CLEAN_MSG = echo "Removing libft object files"
+# environment
+LS_COLORS = rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:
+# environment
+XDG_SESSION_DESKTOP = ubuntu
+# environment
+SSH_AUTH_SOCK = /run/user/1000/keyring/ssh
+# automatic
+%F = $(notdir $%)
+# environment
+DISPLAY = :0
+# environment
+SNAP_INSTANCE_KEY = 
+# makefile (from 'Makefile', line 26)
+ARCHIVE_DEST = archives
+# environment
+PWD = /home/jordan/Documents/42projects/minitalk
+# default
+.LOADED := 
+# environment
+SSH_AGENT_PID = 1705
+# environment
+ORIGINAL_XDG_CURRENT_DESKTOP = ubuntu:GNOME
+# environment
+GTK_MODULES = gail:atk-bridge
+# environment
+VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
+# environment
+HOME = /home/jordan
+# environment
+LESSCLOSE = /usr/bin/lesspipe %s %s
+# environment
+VSCODE_CLI = 1
+# environment
+VSCODE_CODE_CACHE_PATH = /home/jordan/.config/Code/CachedData/b06ae3b2d2dbfe28bca3134cc6be65935cdfea6a
+# environment
+LOGNAME = jordan
+# environment
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
+# environment
+SNAP_LIBRARY_PATH = /var/lib/snapd/lib/gl:/var/lib/snapd/lib/gl32:/var/lib/snapd/void
+# environment
+SNAP_CONTEXT = mLLJ_SDyfTppCR3HxSHjUpRKTAusgNVsvhzR8gcgLEK1cBAdQ7Gu
+# environment
+ELECTRON_NO_ATTACH_CONSOLE = 1
+# environment
+SNAP_USER_COMMON = /home/jordan/snap/code/common
+# environment
+VSCODE_HANDLES_UNCAUGHT_ERRORS = true
+# environment
+GNOME_DESKTOP_SESSION_ID = this-is-deprecated
+# automatic
+^D = $(patsubst %/,%,$(dir $^))
+# makefile (from 'Makefile', line 37)
+LIBFT_FCLEAN_MSG = echo "Removing libft"
+# makefile (from 'Makefile', line 32)
+CLIENT_MSG = echo "client compiling"
+# environment
+MAKELEVEL := 0
+# environment
+SNAP_REAL_HOME = /home/jordan
+# environment
+COLORTERM = truecolor
+# default
+MAKE = $(MAKE_COMMAND)
+# default
+MAKECMDGOALS := all
+# environment
+QT_IM_MODULE = ibus
+# makefile (from 'Makefile', line 18)
+SRCS = srcs/utils.c
+# environment
+SNAP_USER_DATA = /home/jordan/snap/code/101
+# environment
+SHLVL = 2
+# makefile (from 'Makefile', line 14)
+CLIENT = client
+# makefile (from 'Makefile', line 15)
+CC = gcc
+# environment
+GNOME_SHELL_SESSION_MODE = ubuntu
+# default
+MAKE_VERSION := 4.2.1
+# environment
+USER = jordan
+# environment
+SNAP_REVISION = 101
+# makefile
+.DEFAULT_GOAL := all
+# environment
+XDG_CURRENT_DESKTOP = Unity
+# automatic
+%D = $(patsubst %/,%,$(dir $%))
+# default
+MAKE_COMMAND := make
+# environment
+OLDPWD = /home/jordan/Documents/42projects/printf
+# default
+.VARIABLES := 
+# automatic
+*F = $(notdir $*)
+# environment
+LANGUAGE = en_AU:en
+# environment
+VSCODE_IPC_HOOK = /run/user/1000/vscode-5de643d0-1.69.1-main.sock
+# makefile
+MAKEFLAGS = pqrR
+# environment
+MFLAGS = -pqrR
+# automatic
+*D = $(patsubst %/,%,$(dir $*))
+# automatic
++D = $(patsubst %/,%,$(dir $+))
+# environment
+GDK_BACKEND = x11
+# automatic
++F = $(notdir $+)
+# environment
+NO_AT_BRIDGE = 1
+# environment
+QT_ACCESSIBILITY = 1
+# makefile (from 'Makefile', line 38)
+CLIENT_CLEAN_MSG = echo "Removing client"
+# default
+MAKEFILES := 
+# environment
+SNAP_COOKIE = mLLJ_SDyfTppCR3HxSHjUpRKTAusgNVsvhzR8gcgLEK1cBAdQ7Gu
+# automatic
+<F = $(notdir $<)
+# makefile (from 'Makefile', line 35)
+PRINTF_FCLEAN_MSG = echo "Removing printf"
+# makefile (from 'Makefile', line 30)
+PRINTF_MSG = echo "ft_printf library compiling..."
+# makefile (from 'Makefile', line 24)
+OBJ_DEST = objects
+# environment
+SNAP_NAME = code
+# makefile (from 'Makefile', line 20)
+PRINTF = printf/archives/libftprintf.a
+# environment
+LC_ALL = C
+# environment
+GNOME_TERMINAL_SCREEN = /org/gnome/Terminal/screen/eee5c559_8e75_4513_b82e_fee6a806d7c7
+# automatic
+^F = $(notdir $^)
+# environment
+GNOME_TERMINAL_SERVICE = :1.81
+# default
+SUFFIXES := 
+# environment
+SNAP_REEXEC = 
+# environment
+CHROME_DESKTOP = code-url-handler.desktop
+# environment
+WINDOWPATH = 2
+# default
+.INCLUDE_DIRS = /usr/include /usr/local/include /usr/include
+ 
+# default
+.RECIPEPREFIX := 
+# environment
+IM_CONFIG_CHECK_ENV = 1
+# environment
+LANG = C
+# environment
+TERM = xterm-256color
+# environment
+VSCODE_PID = 14807
+# makefile (from 'Makefile', line 31)
+SERVER_MSG = echo "server compiling"
+# variable set hash-table stats:
+# Load=139/1024=14%, Rehash=0, Collisions=18/175=10%
+
+# Pattern-specific Variable Values
+
+# No pattern-specific variable values.
+
+# Directories
+
+# . (device 2066, inode 6688637): 12 files, no impossibilities.
+# srcs (device 2066, inode 6688835): 4 files, no impossibilities so far.
+
+# 16 files, no impossibilities in 2 directories.
+
+# Implicit Rules
+
+objects/%.o: srcs/%.c
+#  recipe to execute (from 'Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@printf "Linked source: %s into object: %s\n" $< $@
+
+# 1 implicit rules, 0 (0.0%) terminal.
+
+# Files
+
+all: printf/archives/libftprintf.a objects/utils.o
+#  Phony target (prerequisite of .PHONY).
+#  Command line target.
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# variable set hash-table stats:
+# Load=0/32=0%, Rehash=0, Collisions=0/5=0%
+#  recipe to execute (from 'Makefile', line 42):
+	@make $(SERVER) >/dev/null & $(SERVER_MSG)
+	@make $(CLIENT) >/dev/null & $(CLIENT_MSG)
+	@$(COMPLETE_MSG)
+
+client:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 66):
+	@$(CC) $(CFLAGS) srcs/client.c objects/*.o -o $(CLIENT)
+
+.PHONY: all clean fclean bonus re git
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+objects/utils.o: srcs/utils.c
+#  Implicit rule search has been done.
+#  Implicit/static pattern stem: 'utils'
+#  File does not exist.
+#  File has been updated.
+#  Needs to be updated (-q is set).
+# automatic
+# @ := objects/utils.o
+# automatic
+# % := 
+# automatic
+# * := utils
+# automatic
+# + := srcs/utils.c
+# automatic
+# | := 
+# automatic
+# < := srcs/utils.c
+# automatic
+# ^ := srcs/utils.c
+# automatic
+# ? := srcs/utils.c
+# variable set hash-table stats:
+# Load=8/32=25%, Rehash=0, Collisions=1/17=6%
+#  recipe to execute (from 'Makefile', line 59):
+	@$(CC) $(CFLAGS) -c $< -o $@
+	@printf "Linked source: %s into object: %s\n" $< $@
+
+git:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 82):
+	@git remote set-url origin https://github.com/t0mmusic/42_minitalk.git
+	@clear
+	@git add .
+	@echo "commit msg"
+	@read COMMIT; \
+	git commit -m "$$COMMIT"; \
+	git push;
+
+# Not a target:
+Makefile:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 17:59:41.74493062
+#  File has been updated.
+#  Successfully updated.
+
+server:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 63):
+	@$(CC) $(CFLAGS) srcs/server.c objects/*.o -o $(SERVER)
+
+printf/archives/libftprintf.a:
+#  Implicit rule search has not been done.
+#  Last modified 2022-07-16 17:55:42.944775426
+#  File has been updated.
+#  Successfully updated.
+#  recipe to execute (from 'Makefile', line 47):
+	@if [ ! -d "printf/" ]; then\
+		printf "printf dependency needed. Download now? [y/N]" \
+		&& read ans && [ $${ans:-N} = y ] \
+		&& git clone https://github.com/t0mmusic/ft_printf.git printf; \
+	fi
+	@$(PRINTF_MSG)
+	$(MAKE) bonus -C ./printf --no-print-directory
+	@cp -r printf/$(ARCHIVE_DEST) $(ARCHIVE_DEST)
+	@cp -r printf/$(OBJ_DEST) $(OBJ_DEST)
+	@cp -r printf/$(HEADER_DEST)/. $(HEADER_DEST)
+
+bonus:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+fclean: clean
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 74):
+	@$(MAKE) fclean -C ./printf >/dev/null & $(PRINTF_FCLEAN_MSG)
+	@$(MAKE) clean -C ./printf/libft >/dev/null & $(LIBFT_FCLEAN_MSG)
+	@$(RM) $(SERVER) & $(SERVER_CLEAN_MSG)
+	@$(RM) $(CLIENT) & $(CLIENT_CLEAN_MSG)
+
+# Not a target:
+.DEFAULT:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+re: fclean all
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+
+clean:
+#  Phony target (prerequisite of .PHONY).
+#  Implicit rule search has not been done.
+#  File does not exist.
+#  File has not been updated.
+#  recipe to execute (from 'Makefile', line 69):
+	@$(MAKE) clean -C ./printf >/dev/null & $(PRINTF_CLEAN_MSG)
+	@$(MAKE) clean -C ./printf/libft >/dev/null & $(LIBFT_CLEAN_MSG)
+	rm -rf $(OBJ_DEST) $(ARCHIVE_DEST) $(HDR_INCL)
+
+# Not a target:
+srcs/utils.c:
+#  Implicit rule search has been done.
+#  Last modified 2022-07-16 16:16:44.263213191
+#  File has been updated.
+#  Successfully updated.
+
+# files hash-table stats:
+# Load=15/1024=1%, Rehash=0, Collisions=0/41=0%
+# VPATH Search Paths
+
+# No 'vpath' search paths.
+
+# No general ('VPATH' variable) search path.
+
+# strcache buffers: 1 (0) / strings = 31 / storage = 273 B / avg = 8 B
+# current buf: size = 8162 B / used = 273 B / count = 31 / avg = 8 B
+
+# strcache performance: lookups = 60 / hit rate = 48%
+# hash-table stats:
+# Load=31/8192=0%, Rehash=0, Collisions=2/60=3%
+# Finished Make data base on Sat Jul 16 18:07:24 2022
+
+ 
