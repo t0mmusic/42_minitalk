@@ -1,9 +1,0 @@
-make --dry-run --keep-going --print-directory
-make: Entering directory '/home/jordan/Documents/42projects/minitalk'
-gcc -Wall -Werror -Wextra -Iheaders -c srcs/utils.c -o objects/utils.o
-printf "Linked source: %s into object: %s\n" srcs/utils.c objects/utils.o
-make server >/dev/null & echo "server compiling"
-make client >/dev/null & echo "client compiling"
-echo "Ready! run ./server to get server PID, then ./client <PID> <MESSAGE>"
-make: Leaving directory '/home/jordan/Documents/42projects/minitalk'
- 

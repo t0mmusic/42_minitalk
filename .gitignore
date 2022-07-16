@@ -8,3 +8,5 @@ printf
 .vscode/configurationCache.log
 .vscode/dryrun.log
 .vscode/settings.json
+*.log
+*.json
