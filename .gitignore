@@ -1,0 +1,7 @@
+headers/
+./objects/
+./archives/
+client
+server
+printf
+!headers/minitalk.h
